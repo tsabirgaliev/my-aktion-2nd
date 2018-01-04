@@ -22,7 +22,7 @@ public abstract class AbstractPage {
     private WebElement facesMessages;
 
     private String getString(String key) {
-        return ResourceBundle.getBundle("messages", Locale.GERMAN).getString(key);
+        return ResourceBundle.getBundle("messages", Locale.ENGLISH).getString(key);
     }
 
     protected WebElement getButtonByLabel(String label) {
